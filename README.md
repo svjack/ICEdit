@@ -1,3 +1,13 @@
+```bash
+git clone https://github.com/River-Zhang/ICEdit && cd ICEdit
+pip install -r requirements.txt
+pip install -U huggingface_hub
+pip install "httpx[socks]"
+huggingface-cli login
+
+python scripts/gradio_demo.py --port 7860 --enable-model-cpu-offload
+```
+
 <div align="center">
 
 <h1>In-Context Edit: Enabling Instructional Image Editing with In-Context Generation in Large Scale Diffusion Transformer</h1>
